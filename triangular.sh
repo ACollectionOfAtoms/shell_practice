@@ -9,7 +9,7 @@ for ((i=1;i<n;++i));do
 	#by using % to specify formating, * signifys field width
 	#is to be modifid by an integer, and \n is the new line char.
 	#"$((n+i-1))" supplies the integer. and the next arguement
-	#supplies the character, by substitution % with the i!
+	#supplies the character, by substitution of % with the i!
 	printf '%*s\n' "$((n+i-1))" "${u//\%/$i}"
 	u+=' %'
 done
