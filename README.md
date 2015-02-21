@@ -1,1 +1,1 @@
-#bash_practice
+#zsh_practice
