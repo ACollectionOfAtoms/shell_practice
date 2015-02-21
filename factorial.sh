@@ -1,4 +1,4 @@
-#bin/zsh
+#!/bin/zsh
 echo "Supply a number: \c"
 read num
 counter=$num

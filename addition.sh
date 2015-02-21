@@ -1,4 +1,4 @@
-#bin/zsh
+#!/bin/zsh
 ints='^[0-9]+$'
 echo "Go ahead, enter a number: \c"
 read num1
