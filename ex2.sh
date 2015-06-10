@@ -8,8 +8,7 @@
 for f in *.*; do [[ -f "$f" ]] || continue; ext="${f##*.}"; mkdir ../"$ext"; mv *."$ext" ../"$ext"; done
 
 #2.) Problem: I would like to return all function and class names within a python source file? Yes, I would. 
-# Solution: (Note: This may not work if unconventional one-line triple quotes are used, or perhaps some other oddities
-# that have yet to break this parser.)
+# Solution: (Note: This needs to be modified comment out single line tripple quotes)
 
 echo "Type the python file you wish to parse: ";read f; cat $f | sed '/"""/,/"""/d' | sed "/'''/,/'''/d" | grep -v '^ *#.*|^\t*#.*' | grep -o '^[ ,\t]*class.[^#]*\|^[ ,\t]*def.[^#]*'
 
